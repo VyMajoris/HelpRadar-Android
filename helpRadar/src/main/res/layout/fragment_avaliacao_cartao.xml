@@ -1,0 +1,67 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/avaliacaoCartao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/zzz2"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        tools:context="br.com.fiap.helpradar.CenterActivity$CadstroFormFragment" >
+
+        <TextView
+            android:id="@+id/avalEspecialdiade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="ESPECIALIDADE"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/White" />
+
+        <TextView
+            android:id="@+id/avalComentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/avalTitulo"
+            android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium."
+            android:textColor="@color/White" />
+
+        <RatingBar
+            android:id="@+id/avalRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avalComentario"
+            android:layout_centerHorizontal="true" 
+            android:clickable="false"/>
+
+        <TextView
+            android:id="@+id/avalTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/avalEspecialdiade"
+            android:layout_below="@+id/avalEspecialdiade"
+            android:text="TÍTULO"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/White" />
+
+        <TextView
+            android:id="@+id/avalData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/avalComentario"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/avalEspecialdiade"
+            android:gravity="center"
+            android:text="12/23/2025"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/White"
+            android:typeface="monospace" />
+
+    </RelativeLayout>

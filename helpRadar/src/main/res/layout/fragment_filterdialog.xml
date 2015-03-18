@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:seekarc="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FilterDialogRelative"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/zzz"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/txtEspecialidade"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblEspecialidade"
+        android:layout_centerHorizontal="true"
+        android:imeOptions="actionDone"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/lblEspecialidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:text="Especialidade" />
+
+    <FrameLayout
+        android:id="@+id/seekArcContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEspecialidade"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1" >
+
+        <br.com.fiap.helpradar.seekArc.SeekArc
+            android:id="@+id/seekArc"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:padding="30dp"
+            seekarc:rotation="180"
+            seekarc:startAngle="30"
+            seekarc:sweepAngle="300"
+            seekarc:touchInside="true"
+            seekarc:max="10000" />
+
+        <TextView
+            android:id="@+id/seekArcProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textSize="40sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/nomeAssistente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekArcContainer"
+        android:text="Reputação Minima:" />
+
+    <RatingBar
+        android:id="@+id/minReputacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nomeAssistente" />
+
+</RelativeLayout>

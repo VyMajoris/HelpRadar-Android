@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HelpRadar.iml" filepath="$PROJECT_DIR$/HelpRadar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebookSDK/facebookSDK.iml" filepath="$PROJECT_DIR$/facebookSDK/facebookSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helpRadar/helpRadar.iml" filepath="$PROJECT_DIR$/helpRadar/helpRadar.iml" />
+    </modules>
+  </component>
+</project>
+

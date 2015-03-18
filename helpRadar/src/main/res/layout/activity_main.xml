@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zzz"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="br.com.fiap.helpradar.MainActivity" >
+
+    <com.facebook.widget.LoginButton
+        android:id="@+id/fbLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="103dp"
+        android:gravity="center"
+        facebook:login_text="@string/fbLoginToContinue"
+        facebook:preset_size="large" 
+       />
+
+    <ImageView
+        android:id="@+id/hrLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/hr_logotextnobg" />
+
+    <TextView
+        android:id="@+id/nomeAssistente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="CodeEaters 2014 - 2TDSB FIAP "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.fiap.helpradar.CenterActivity" >
+
+     <item
+        android:id="@+id/ActoinSearchAssist"
+       	android:icon="@drawable/ic_action_search"
+        android:title="@string/buscar"
+        android:visible="true"
+        app:showAsAction="always"/>
+    
+    <item
+        android:id="@+id/ActionGPSBroadCast"
+     	android:icon="@drawable/ic_action_location_searching"
+        android:visible="false"
+       
+        app:showAsAction="always"></item>
+    
+    
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+
+
+</menu>

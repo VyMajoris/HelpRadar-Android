@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentCadastroForm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zzz"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="br.com.fiap.helpradar.CenterActivity$CadstroFormFragment" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dp"
+        android:scrollbars="horizontal|vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/NomeSobrenome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:text="Nome e Sobrenome:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editNome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="43dp"
+                android:text="Especialidades:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editEspPrim"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Especialidade Primária" />
+
+            <EditText
+                android:id="@+id/editEspSec"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Especialidade Secundaria" />
+
+            <EditText
+                android:id="@+id/editEspTerc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Especialidade Terciaria" />
+
+            <TextView
+                android:id="@+id/nomeAssistente"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="43dp"
+                android:text="Contato:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editCelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Celular"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="e-mail"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="43dp"
+                android:text="Foto:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <QuickContactBadge
+                android:id="@+id/quickContactBadge1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Continuar" 
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
